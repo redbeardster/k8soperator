@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-crashloop-pod
+  namespace: default
+  annotations:
+    healing.kubernetes.io/action: "restart"
+spec:
+  containers:
+  - name: crash-container
+    image: busybox
+    command: ["/bin/sh", "-c", "exit 1"]
+  restartPolicy: Always
