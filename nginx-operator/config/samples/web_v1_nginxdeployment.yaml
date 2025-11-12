@@ -1,0 +1,9 @@
+apiVersion: web.example.com/v1
+kind: NginxDeployment
+metadata:
+  name: nginx-sample
+  namespace: default
+spec:
+  replicas: 2
+  image: nginx:1.25
+  port: 80
