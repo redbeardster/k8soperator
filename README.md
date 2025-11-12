@@ -2,4 +2,4 @@
 
 ### 1. `operator-manual` directory contents Go-based operator version in minimalistic non-SDK style to keep this version as simple as possible to demonstrate basic concepts and logic.
 ### 2. `helm-version` is built via SDK with as Helm charts
-### 3. `go-version` is built as an operator with logic implementation in Go 
+### 3. `nginx-operator` is built as an operator with logic implementation in Go 
